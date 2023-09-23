@@ -6,8 +6,8 @@
     ],
     "overrides": [
         {
-          "files": ["*.scss", "**/*.scss"],
-          "customSyntax": "postcss-scss"
+            "files": ["*.scss", "**/*.scss"],
+            "customSyntax": "postcss-scss"
         }
     ],
     "plugins": [
@@ -20,8 +20,10 @@
         "scss/at-rule-no-unknown" : true,
         "declaration-empty-line-before": null,
         "order/properties-order": [],
+        "font-family-name-quotes": null,
         "plugin/rational-order": [true, {
             "empty-line-between-groups": true
         }]
-    }
+    },
+    "ignoreFiles": ["**/dist/**"]
 }
