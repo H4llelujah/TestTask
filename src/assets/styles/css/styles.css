@@ -1,0 +1,21 @@
+@import 'gilory.css';
+@import '~normalize.css';
+
+body {
+  font-family: "Gilory", sans-serif;
+}
+
+.btn {
+  width: 100px;
+  height: 100px;
+  
+  background-color: red;
+}
+
+.test {
+  color: #1F3F68;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
