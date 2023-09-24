@@ -27,5 +27,5 @@
             "empty-line-between-groups": true
         }]
     },
-    "ignoreFiles": ["**/dist/**"]
+    "ignoreFiles": ["**/dist/**", "**/src/assets/styles/css/**"]
 }
