@@ -1,7 +1,12 @@
 @import 'gilory.css';
-@import '~normalize.css';
+
 body {
   font-family: "Gilory", sans-serif;
+}
+
+*{
+  padding: 0;
+  margin: 0;
 }
 
 a {

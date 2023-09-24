@@ -1,10 +1,10 @@
-import Popup from '../classes/Popup';
+
 
 const namePattern = /^[a-zA-Z'][a-zA-Z-' ]+[a-zA-Z']?$/;
 
 const emailPattern = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
-export default function formValidate(fieldObject) {
+function formValidate(fieldObject) {
     let isValid = true;
     const values = fieldObject;
     const errorMessages = [];

@@ -1,4 +1,4 @@
-export default class Popup {
+class Popup {
     constructor(observer, title, text = '') {
         this.observer = observer;
         this.title = title;

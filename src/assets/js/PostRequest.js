@@ -1,4 +1,4 @@
-export default function postRequest(url, data) {
+function postRequest(url, data) {
     const options = {
         method: 'POST',
         headers: {

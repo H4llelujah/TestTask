@@ -1,9 +1,7 @@
-import postRequest from '../PostRequest';
-import formValidate from './formValidate';
 
 const url = 'https://jsonplaceholder.typicode.com/users';
 
-export default function handleSubmit(event, formFields) {
+ function handleSubmit(event, formFields) {
     event.preventDefault();
 
     const values = {};
