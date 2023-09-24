@@ -9,8 +9,6 @@
   line-height: 162.5%; 
   letter-spacing: 0.8px;
 
-  cursor: pointer;
-
   opacity: 0.6;
 }
 
@@ -21,6 +19,32 @@
   font-style: normal;
   line-height: 162.5%; 
   letter-spacing: 0.8px;
+}
+
+@mixin button{
+  min-width: 220px;
+  padding: 15px 48px;
+  
+  color: #FFF;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 162.5%; 
+  letter-spacing: 0.64px;
+  text-align: center;
+  
+  background: #5A98D0;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 10px 20px 0 rgb(53 110 173 / 20%);
+
+  cursor: pointer;
+
+  transition: all 0.3s;
+
+  &:hover{
+    background-color: #083863;
+  }
 }
 
 body{
@@ -42,4 +66,7 @@ a{
 @import 'blocks/feature';
 @import 'blocks/clients';
 @import 'blocks/footer';
+@import 'UI/MyModal/myModal';
+@import 'blocks/form';
+@import 'UI/MyPopup/myPopup';
 

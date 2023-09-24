@@ -77,6 +77,10 @@
   
     color: #FFF;
   }
+
+  .feedback__button{
+    @include button;
+  }
   
   .footer__communication{
     @include footer-subtitle;
