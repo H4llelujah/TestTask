@@ -45,13 +45,13 @@ module.exports = {
         new CopyPlugin({
             patterns: [
                 {
-                  from: path.resolve(__dirname, './src/assets/img'),
-                  to: path.resolve(__dirname, 'dist/img'),
+                    from: path.resolve(__dirname, './src/assets/img'),
+                    to: path.resolve(__dirname, 'dist/img'),
                 },
               ],
             }),
         new MiniCssExtractPlugin({
-            filename: 'styles.css',
+            filename: 'css/styles.css',
         }),
     ],
     module: {
@@ -62,18 +62,37 @@ module.exports = {
                     {
                         loader: MiniCssExtractPlugin.loader,
                         options: {
+                            publicPath: '../',
                         },
                     },
                     'css-loader',
                 ],
             },
             {
-                test: /\.(png|jpg|svg)$/,
-                use: ['file-loader'],
+                test: /\.(png|jpg|jpeg|svg)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: 'images/',
+                            esModule: false,
+                        },
+                    },
+                ],
             },
             {
                 test: /\.(ttf|woff|woff2|eot)$/,
-                use: ['file-loader'],
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: 'fonts/',
+                            esModule: false,
+                        },
+                    },
+                ],
             },
         ],
     },

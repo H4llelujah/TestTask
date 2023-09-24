@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "stylelint": "npx stylelint **/*.scss --fix",
+    "stylelint": "npx stylelint **/*.{scss,css} --fix",
     "eslint": "npx eslint **/*.js --fix",
     "build": "webpack --mode production",
     "dev": "webpack --mode development",
+    "watch": "webpack --mode development --watch",
     "start": "webpack-dev-server --mode development --open"
   },
   "keywords": [],
