@@ -1,0 +1,38 @@
+.modal{
+    position: fixed;
+
+    inset: 0;
+
+    z-index: -1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgb(0 0 0 / 50%);
+    opacity: 0;
+
+    transition: all 0.3s;
+}
+
+.modal-active{
+    z-index: 1;
+
+    opacity: 1;
+}
+
+.modal__content{
+    min-width: 250px;
+    padding: 56px;
+
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (width <= 700px){
+    .modal__content{
+        min-width: fill;
+        margin: 0 25px;
+        padding: 56px;
+    }
+}
